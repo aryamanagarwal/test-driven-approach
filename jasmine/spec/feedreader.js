@@ -32,21 +32,21 @@ $(function() {
          * and that the URL is not empty.
          */
          it('all feed have url defined',function(){
-            for(var i in allFeeds){
+            for(var i=0;i<allFeeds.length;i++){
                 expect(allFeeds[i].url).not.toBeNull();
                 
             }
-         })
+         });
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
          it('has a feed name defined',function(){
-            for(var i in allFeeds){
+            for(var i =0;i<allFeeds.length;i++){
                 expect(allFeeds[i].name).not.toBeNull();
             }
-         })
+         });
     });
 
 
@@ -121,7 +121,7 @@ $(function() {
                 expect(oldFeed).not.toBe($('.feed').html());
                 done();
             });
-            })
+            });
           });
 
 }());
