@@ -46,6 +46,8 @@ $(function () {
 		it('has a feed name defined', function () {
 			for (var i = 0; i < allFeeds.length; i++) {
 				expect(allFeeds[i].name).not.toBeNull();
+				expect(allFeeds[i].url).toBeDefined();
+				expect(allFeeds[i].url.length).not.toEqual(0);
 			}
 		});
 	});
@@ -92,9 +94,9 @@ $(function () {
 			loadFeed(0, done);
 		});
 
-		it('feed container contains elements', function (done) {
+		it('feed container contains elements', function () {
 			expect($('.feed').has('.entry').length).toBeGreaterThan(0);
-			done();
+			
 		});
 	});
 	/* A new test suite named "New Feed Selection" */
