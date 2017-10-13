@@ -1,11 +1,11 @@
-#About
+# About
 This is a web-based application that reads RSS feeds.The application has been implemented using test driven approach.
 Jasmine library has been used to implement test-driven development.
 
-#How to run
+# How to run
 Open index.html
 
-#Some siginificant tests
+# Some siginificant tests
 1. loops through each feed in the `allFeeds` object and ensures it has a URL defined and that the URL is not empty.
 2. Loop through each feed in the `allFeeds` object and ensures it has a name defined and that the name is not empty.
 3. Test that ensures the menu element is hidden by default.
